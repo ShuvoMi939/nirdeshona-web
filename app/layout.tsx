@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Anek_Bangla } from "next/font/google";
 import "./globals.css";
+import './amplifyClient'; // Import only for side-effect
 
 import { Amplify } from 'aws-amplify';
 import awsExports from '../src/aws-exports';
