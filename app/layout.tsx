@@ -3,7 +3,7 @@ import { Geist, Geist_Mono, Anek_Bangla } from "next/font/google";
 import "./globals.css";
 
 import { Amplify } from 'aws-amplify';
-import awsExports from '../aws-exports';
+import awsExports from '../src/aws-exports';
 Amplify.configure(awsExports);
 
 import Header from "./components/Header";
