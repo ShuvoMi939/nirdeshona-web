@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12 px-4">
+    <footer className="font-anek-bangla bg-gray-900 text-gray-300 py-12 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         
         {/* About */}
@@ -52,7 +52,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="w-full px-3 py-2 text-sm text-black rounded-l-md focus:outline-none"
+                className="w-full px-3 py-2 text-sm text-black rounded-l-md focus:outline-none bg-white"
               />
               <button
                 type="submit"
