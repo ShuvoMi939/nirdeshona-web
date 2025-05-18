@@ -26,3 +26,22 @@ body {
   color: var(--foreground);
 }
 
+
+
+/* Hide Amplify default colors and background */
+[data-amplify-authenticator] [data-amplify-container] {
+  width: 100%!important;
+  max-width: 400px;
+  border: none;
+}
+[data-amplify-authenticator] [data-amplify-router] {
+    background-color: #fff!important;
+    box-shadow: 0 0 0 #fff!important;
+    border-color: none!important;
+    border-width: 0px!important;
+    border-style: none!important;
+}
+
+[data-amplify-authenticator] [data-amplify-form] {
+    padding: 0px!important;
+}

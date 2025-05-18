@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Anek_Bangla } from "next/font/google";
 import "./globals.css";
 
+import { Amplify } from 'aws-amplify';
+import awsExports from '../src/aws-exports';
+Amplify.configure(awsExports);
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -35,7 +39,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${anekBangla.variable} font-sans antialiased flex flex-col min-h-screen`}
       >
         <Header />
-        <main className="flex-1 container mx-auto p-4">{children}</main>
+        <main className="flex-1 container mx-auto p-0">{children}</main>
         <Footer />
       </body>
     </html>
